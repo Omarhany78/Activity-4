@@ -5,7 +5,10 @@ body {
     background-color: #f9f9f9;
   }
 
-
+.width {
+  text-align: center;
+  color: #007bff;
+}
 
   .grid-layout {
     display: grid;
@@ -66,4 +69,16 @@ body {
   .article a:hover {
     background-color: #0056b3;
   }
-  
+
+  @media (max-width: 576px) {
+    .grid-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 992px) and (min-width: 577px) {
+    .grid-layout {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
